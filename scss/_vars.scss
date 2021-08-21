@@ -1,0 +1,28 @@
+// Font Style
+$font-family: monospace;
+$base-font-size: 14px;
+
+// Color Vars
+$blue-100: #93C5FD;
+$blue-200: #6366F1;
+$blue-300: #5047E6;
+$to-top: linear-gradient(to top, $blue-100, $blue-300);
+$to-bottom: linear-gradient(to bottom, $blue-100, $blue-300);
+$to-bottom-right: linear-gradient(to bottom right, $blue-100, $blue-300);
+$to-bottom-left: linear-gradient(to bottom left, $blue-100, $blue-300);
+
+$light-txt-color: #484848;
+$light-col-color: #F3F4F6;
+$light-sub-col-color: #E5E7EB;
+
+// For elements
+$body-color: $to-bottom-right;
+$reverse-body-color: $to-bottom-left;
+$text-color: $light-txt-color;
+$hover-text-color: #282828;
+$col-color: $light-col-color;
+$sub-col-color: $light-sub-col-color;
+
+// Brands Colors
+$linkedin-color: #0085A8;
+

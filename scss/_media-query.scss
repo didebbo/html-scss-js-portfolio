@@ -1,0 +1,69 @@
+@media (-webkit-min-device-pixel-ratio: 1.0) {
+    body {
+
+        font-size: ($base-font-size * 1.5);
+
+        .item {
+
+            .main-col {
+
+                .nav-section {
+
+                    button {
+                        padding: (0.6em * 1.5);
+                        
+                        .fa-circle {
+                            font-size: (1.8em * 1.5);
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25) {
+    body {
+        font-size: ($base-font-size * 1.25);
+
+        .item {
+
+            .main-col {
+
+                .nav-section {
+
+                    button {
+                        padding: (0.6em * 1.25);
+                        
+                        .fa-circle {
+                            font-size: (1.8em * 1.25);
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+    body {
+        font-size: $base-font-size;
+
+        .item {
+
+            .main-col {
+
+                .nav-section {
+
+                    button {
+                        padding: 0.6em;
+                        
+                        .fa-circle {
+                            font-size: 1.8em;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
