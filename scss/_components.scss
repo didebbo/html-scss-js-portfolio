@@ -4,6 +4,8 @@
     color: $text-color;
     padding: 0.8em 1em;
     border-radius: 10em;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 @mixin btn ($bg-color: $sub-col-color, $color: $text-color) {
