@@ -248,7 +248,7 @@ body {
                             flex-wrap: wrap;
                             justify-content: center;
                             width: 100%;
-                            flex-grow: 1;
+                            // flex-grow: 1;
                             overflow: auto;
 
                             &::-webkit-scrollbar {
@@ -259,7 +259,7 @@ body {
                                 display: flex;
                                 padding: 1em;
                                 width: (100% / 2);
-                                height: (100% / 2);
+                                // height: (100% / 2);
 
                                 .card {
                                     display: flex;

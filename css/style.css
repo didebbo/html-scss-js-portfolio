@@ -88,11 +88,11 @@ body .item .main-col #chi-sono .main-body > .title, body .item .main-col #portfo
 
 body .item .main-col #chi-sono .main-body .card-list, body .item .main-col #portfolio .main-body .card-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; overflow: hidden; }
 
-body .item .main-col #chi-sono .main-body .card-list .row, body .item .main-col #portfolio .main-body .card-list .row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; overflow: auto; }
+body .item .main-col #chi-sono .main-body .card-list .row, body .item .main-col #portfolio .main-body .card-list .row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; overflow: auto; }
 
 body .item .main-col #chi-sono .main-body .card-list .row::-webkit-scrollbar, body .item .main-col #portfolio .main-body .card-list .row::-webkit-scrollbar { display: none; }
 
-body .item .main-col #chi-sono .main-body .card-list .row > .col, body .item .main-col #portfolio .main-body .card-list .row > .col { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 1em; width: 50%; height: 50%; }
+body .item .main-col #chi-sono .main-body .card-list .row > .col, body .item .main-col #portfolio .main-body .card-list .row > .col { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 1em; width: 50%; }
 
 body .item .main-col #chi-sono .main-body .card-list .row > .col .card, body .item .main-col #portfolio .main-body .card-list .row > .col .card { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: 100%; background-color: #F3F4F6; padding: 1em; border-radius: 1em; }
 
