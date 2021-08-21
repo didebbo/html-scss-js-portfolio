@@ -340,8 +340,7 @@ body {
                                     height: 100%;
                                     padding: 0;
                                     overflow: hidden;
-                                    border: 0.2em solid $blue-200;
-                                    background-color: $col-color;
+                                    box-shadow: 0 0 0 0.25em $blue-200;
 
                                     &::after {
                                         position: absolute;
