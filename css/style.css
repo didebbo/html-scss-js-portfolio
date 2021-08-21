@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { color: #484848; font-family: monospace; font-size: 14px; }
+body { color: #484848; font-family: monospace; font-size: 1em; }
 
 ul { display: -webkit-box; display: -ms-flexbox; display: flex; list-style: none; }
 
