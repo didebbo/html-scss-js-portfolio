@@ -80,18 +80,48 @@ body {
                             padding: 0.4em 0.5em;
                             border-radius: 100em;
                             background-color: $sub-col-color;
-                            color: $text-color;
                             
                             &:hover {
-                                color: $hover-text-color;
-                            }
-                        }
-                    }
+                                color: $social-icons-hover-color;
 
-                    .linkedin {
+                                i {
+                                    transition: color 0.2s;
+                                }
+                            }
+
+                            &.linkedin {
                         
-                        &:hover {
-                            color: $linkedin-color;
+                                &:hover {
+                                    color: $linkedin-color;
+                                }
+                            }
+
+                            &.twitter {
+                        
+                                &:hover {
+                                    color: $twitter-color;
+                                }
+                            }
+
+                            &.instagram {
+                        
+                                &:hover {
+
+                                    i {
+                                        background-image: $instagram-color;
+                                        background-clip: text;
+                                        -webkit-background-clip: text;
+                                        color: transparent;
+                                    }
+                                }
+                            }
+
+                            &.facebook {
+                        
+                                &:hover {
+                                    color: $facebook-color;
+                                }
+                            }
                         }
                     }
                 }
@@ -131,7 +161,7 @@ body {
 
             > li.btn-contact {
                 > a {
-                    @include btn($bg-color: $reverse-body-color, $color: #fff);                    
+                    @include btn($bg-color: $reverse-body-color, $color: $col-color);                    
                 }
             }
         }
@@ -165,14 +195,17 @@ body {
 
                     > ul {
 
-                        > li > a {
-                            color: $col-color;
-                            margin: 0 0.5em;
-                            font-size: 1.2em;
+                        > li {
 
-                            &::after {
-                                content: "|";
+                            > a {
                                 color: $col-color;
+                                margin: 0 0.5em;
+                                font-size: 1.2em;
+
+                                &::after {
+                                    content: "|";
+                                    color: $col-color;
+                                }
                             }
                         }
                     }
@@ -283,6 +316,10 @@ body {
                                     border-radius: 2em;
                                     overflow: auto;
 
+                                    strong {
+                                                color: $dark-col-color;
+                                            }
+
                                     &::-webkit-scrollbar {
                                         display: none;
                                     }
@@ -329,10 +366,11 @@ body {
                     .card-list {
 
                         .row {
+                            padding: 1em;
 
                             .col {
                                 width: (100% / 3);
-                                padding: 2em 1em;
+                                padding: 3em 1em;
 
                                 .card {
                                     position: relative;
@@ -344,13 +382,13 @@ body {
 
                                     &::after {
                                         position: absolute;
-                                        content: "Name";
+                                        content: "Unknown";
                                         left: 50%;
                                         bottom: 0;
                                         transform: translate(-50%);
-                                        padding: 0.2em 2em;
+                                        padding: 0.2em 1.5em;
                                         border-radius: 1em 1em 0 0;
-                                        font-size: 1.1em;
+                                        font-size: 1.2em;
                                         font-weight: bold;
                                         color: $col-color;
                                         background-image: $to-bottom-left;

@@ -1,67 +1,151 @@
-@media (-webkit-min-device-pixel-ratio: 1.0) {
-    body {
+// Dark Mode
+html {
+    
+    &.dark {
+        
+        body {
+            background-image: $dark-body-color;
+            color: $dark-txt-color;
 
-        font-size: ($base-font-size * 1.5);
+            .item {
 
-        .item {
-
-            .main-col {
-
-                .nav-section {
-
-                    button {
-                        padding: (0.6em * 1.5);
-                        
-                        .fa-circle {
-                            font-size: (1.8em * 1.5);
-                        }
-                    } 
+                .side-col, .main-col {
+                    background-color: $dark-col-color;
                 }
-            }
-        }
-    }
-}
 
-@media (-webkit-min-device-pixel-ratio: 1.25) {
-    body {
-        font-size: ($base-font-size * 1.25);
+                .side-col {
 
-        .item {
+                    .badge {
+                        @include badge($bg-color: $dark-sub-col-color);
+                    }
 
-            .main-col {
+                    > li.social {
 
-                .nav-section {
+                        .icons {
 
-                    button {
-                        padding: (0.6em * 1.25);
-                        
-                        .fa-circle {
-                            font-size: (1.8em * 1.25);
+                            > li {
+
+                                > a {
+                                    background-color: $dark-sub-col-color;
+                                }
+                            }
                         }
-                    } 
+                    }
+
+                    > li.info {
+                        background-color: $dark-sub-col-color;
+                    }
+
+                    > li.btn-contact {
+                        > a {
+                            @include btn($bg-color: $dark-reverse-btn-color, $color: $dark-txt-color);                    
+                        }
+                    }
                 }
-            }
-        }
-    }
-}
 
-@media (-webkit-min-device-pixel-ratio: 1.5) {
-    body {
-        font-size: $base-font-size;
+                .main-col {
 
-        .item {
+                    .nav-section {
+                        > nav {
+                            background-color: $dark-sub-col-color;
 
-            .main-col {
+                            > ul {
 
-                .nav-section {
+                                > li {
 
-                    button {
-                        padding: 0.6em;
-                        
-                        .fa-circle {
-                            font-size: 1.8em;
+                                    > a {
+                                        color: $dark-txt-color;
+
+                                        &::after {
+                                            color: $dark-txt-color;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .theme-icon {
+                                color: $dark-txt-color;
+                            }
                         }
-                    } 
+
+                        #main-button-nav {
+                            background-color: $dark-sub-col-color;
+
+                            .circle {
+                                background-color: $dark-txt-color;
+                            }
+                        }
+                    }
+
+                    #chi-sono, #portfolio {
+
+                        .main-header {
+
+                            > .title {
+
+                                .border-bottom {
+                                    background-color: $dark-txt-color;
+                                }
+                            }
+                        }
+
+                        .main-body {
+                            background-color: $dark-sub-col-color;
+
+                            .card-list {
+
+                                .row {
+
+                                    > .col {
+
+                                        .card {
+                                            background-color: $dark-col-color;
+
+                                            strong {
+                                                color: $light-col-color;
+                                            }
+
+                                            .icon {
+                                                color: $dark-txt-color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #portfolio {
+
+                        .main-body {
+
+                            .card-list {
+
+                                .row {
+
+                                    .col {
+
+                                        .card {
+                                            box-shadow: 0 0 0 0.25em $dark-col-color;
+
+                                            &::after {
+                                                color: $dark-txt-color;
+                                                background-image: $dark-reverse-body-color;
+                                            }
+
+                                            .preview {
+                                                background-color: $dark-col-color;
+
+                                                &::after {
+                                                    color: $dark-col-color;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

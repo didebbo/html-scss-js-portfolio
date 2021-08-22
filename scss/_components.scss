@@ -1,7 +1,6 @@
 // Badge
-@mixin badge($bg-color: $sub-col-color, $color: $text-color) {
+@mixin badge($bg-color: $sub-col-color) {
     background-color: $bg-color;
-    color: $text-color;
     padding: 0.8em 1em;
     border-radius: 10em;
     font-weight: bold;
@@ -10,7 +9,7 @@
 
 @mixin btn ($bg-color: $sub-col-color, $color: $text-color) {
     display: inline-block;
-    padding: 0.6em 1em;
+    padding: 0.8em 1em;
     border-radius: 10em;
     background-image: $bg-color;
     color: $color;
