@@ -15,6 +15,13 @@ html {
 
                 .side-col {
 
+                    .avatar {
+
+                        > img {
+                            filter: hue-rotate(-50deg) opacity(60%);
+                        }
+                    }
+
                     .badge {
                         @include badge($bg-color: $dark-sub-col-color);
                     }
