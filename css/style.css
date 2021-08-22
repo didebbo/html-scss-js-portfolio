@@ -34,7 +34,7 @@ body .item .side-col .badge { background-color: #E5E7EB; padding: 0.8em 1em; bor
 
 body .item .side-col > li.social .icons { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 0.5em; font-size: 1.8em; }
 
-body .item .side-col > li.social .icons > li > a { padding: 0.4em 0.5em; border-radius: 100em; background-color: #E5E7EB; }
+body .item .side-col > li.social .icons > li > a { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0.4em 0.5em; border-radius: 100em; background-color: #E5E7EB; }
 
 body .item .side-col > li.social .icons > li > a:hover { color: #282828; }
 
