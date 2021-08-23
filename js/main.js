@@ -33,6 +33,8 @@ const hide_menu = () => {
 }
 
 const show_page = (gotoPage) => {
+    console.log(gotoPage);
+    console.log(localStorage.lastLoadedPage);
 
     let not_found = true;
 
