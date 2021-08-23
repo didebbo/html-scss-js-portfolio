@@ -138,6 +138,7 @@ html {
                                             &::after {
                                                 color: $dark-txt-color;
                                                 background-image: $dark-reverse-body-color;
+                                                box-shadow: 0 0 0 0.1em $dark-col-color;
                                             }
 
                                             .preview {
