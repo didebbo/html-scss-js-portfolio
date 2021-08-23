@@ -33,10 +33,9 @@ const hide_menu = () => {
 }
 
 const show_page = (gotoPage) => {
-    console.clear();
-    console.log("what happening");
-    console.log("gotoPage:" + gotoPage);
-    console.log("lastLoadedPage: " + localStorage.lastLoadedPage);
+    // console.clear();
+    // console.log("gotoPage:" + gotoPage);
+    // console.log("lastLoadedPage: " + localStorage.lastLoadedPage);
 
     let not_found = true;
 
@@ -49,7 +48,7 @@ const show_page = (gotoPage) => {
         else page.style.display = "none";
     })
     if (not_found) {
-        console.log("gotoPage include '#': " + gotoPage.includes("#"));
+        // console.log("gotoPage include '#': " + gotoPage.includes("#"));
         if (!gotoPage.includes("#") || localStorage.lastLoadedPage == null) {
             pages[0].style.display = "flex";
             localStorage.lastLoadedPage = pages[0].id;
@@ -63,7 +62,6 @@ const load_page = () => {
     let currentAnchor = window.location.href;
     currentAnchor = currentAnchor.substr(currentAnchor.lastIndexOf("/") + 1);
     if (currentAnchor.includes("#")) currentAnchor = currentAnchor.substr(currentAnchor.lastIndexOf("#"));
-    console.log("currentAnchor: " + currentAnchor);
     show_page(currentAnchor);
 }
 
