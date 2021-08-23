@@ -2,11 +2,16 @@
 const favicon = document.querySelector("#favicon");
 const menu = document.getElementById("main-nav");
 const buttonMenu = document.getElementById("main-button-nav");
+const pages = [
+    document.getElementById("chi-sono"),
+    document.getElementById("portfolio")
+]
 const theme_mode_icons = document.getElementsByClassName("theme-mode-icon");
 
 // Main
 window.onload = () => {
     theme_color();
+    load_page();
 }
 
 // Actions
@@ -25,6 +30,37 @@ const show_menu = () => {
 const hide_menu = () => {
     menu.classList.remove("show");
     buttonMenu.classList.remove("focus");
+}
+
+const show_page = (gotoPage) => {
+
+    let not_found = true;
+
+    if (gotoPage === "index.html") {
+        not_found = false;
+        pages[0].style.display = "flex";
+        localStorage.lastLoadedPage = pages[0].id;
+    }
+    else {
+        pages.forEach(page => {
+            if (gotoPage === page.id) {
+                not_found = false;
+                page.style.display = "flex";
+                localStorage.lastLoadedPage = page.id;
+            }
+            else page.style.display = "none";
+        })
+    }
+    if (not_found) {
+        document.getElementById(localStorage.lastLoadedPage).style.display = "flex";
+    }
+}
+
+const load_page = () => {
+    let currentAnchor = window.location.href;
+    currentAnchor = currentAnchor.substr(currentAnchor.lastIndexOf("/") + 1);
+    currentAnchor = currentAnchor.substr(currentAnchor.lastIndexOf("#") + 1);
+    show_page(currentAnchor);
 }
 
 const theme_color = () => {
