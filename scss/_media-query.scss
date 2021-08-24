@@ -190,11 +190,11 @@ html {
                     .nav-section {
                         position: fixed;
                         align-self: flex-start;
-                        top: auto;
-                        bottom: 1em;
-                        left: 50%;
-                        right: auto;
-                        transform: translate(-50%);
+                        top: 2em;
+                        bottom: auto;
+                        left: auto;
+                        right: 2em;
+                        transform: translate(-50%, 50%);
                         z-index: 1;
 
                         // > nav {
