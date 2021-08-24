@@ -190,22 +190,22 @@ html {
                     .nav-section {
                         position: fixed;
                         align-self: flex-start;
-                        top: 2em;
+                        top: 1em;
                         bottom: auto;
                         left: auto;
-                        right: 2em;
-                        transform: translate(-50%, 50%);
+                        right: 1em;
                         z-index: 1;
 
-                        // > nav {
-                        //     opacity: 1;
-                        //     width: auto;
-                        //     padding: 0 0.6em;
-                        // }
+                        
+                        > nav {
+                            opacity: 1;
+                            width: auto;
+                            padding: 0 0.6em;
+                        }
 
-                        // #main-button-nav {
-                        //     border-radius: 0 100em 100em 0;
-                        // }
+                        #main-button-nav {
+                            border-radius: 0 100em 100em 0;
+                        }
                     }
 
                     #chi-sono, #portfolio {
