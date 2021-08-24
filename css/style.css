@@ -203,7 +203,7 @@ html.dark body .item .main-col #portfolio .main-body .card-list .row .col .card 
   html body .item { -ms-grid-columns: 1fr; grid-template-columns: 1fr; }
   html body .item .side-col { height: calc(100vh - (2em * 2)); }
   html body .item .side-col > li:not(:first-child) { margin-top: 2em; }
-  html body .item .main-col .nav-section { position: fixed; -ms-flex-item-align: start; align-self: flex-start; top: auto; bottom: 1em; left: auto; right: 1em; z-index: 1; }
+  html body .item .main-col .nav-section { position: fixed; -ms-flex-item-align: start; align-self: flex-start; top: 3em; right: 3em; z-index: 1; }
   html body .item .main-col #chi-sono .main-body .card-list, html body .item .main-col #portfolio .main-body .card-list { padding-bottom: 1em; }
   html body .item .main-col #chi-sono .main-body .card-list .row .col, html body .item .main-col #portfolio .main-body .card-list .row .col { width: 100%; height: auto; }
   html body .item .main-col #chi-sono .main-body .card-list .row .col .card { padding: 3em 2em; }
