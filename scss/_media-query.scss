@@ -166,7 +166,91 @@ html {
 
 // Portrait
 @media (orientation: portrait) {
-    .item {
-        display: none!important;
+
+    html {
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            width: 100%;
+            height: auto;
+            padding: 2em 0;
+
+            .item {
+                grid-template-columns: 1fr;
+
+                .side-col {
+                    height: calc(100vh - (2em * 2));
+
+                    > li:not(:first-child) {
+                        margin-top: 2em;
+                    }
+                }
+
+                .main-col {
+
+                    #chi-sono, #portfolio {
+
+                        .main-body {
+
+                            .card-list {
+                                padding-bottom: 1em;
+
+                                .row {
+
+                                    .col {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #chi-sono {
+
+                        .main-body {
+
+                            .card-list {
+
+                                .row {
+
+                                    .col {
+
+                                        .card {
+                                            padding: 3em 2em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #portfolio {
+
+                        .main-body {
+
+                            .card-list {
+
+                                .row {
+                                    padding: 2em;
+
+                                    .col {
+                                        padding: 2em 1em;
+                                        
+                                        &::before {
+                                            content: "";                                            
+                                            margin-bottom: 50%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
