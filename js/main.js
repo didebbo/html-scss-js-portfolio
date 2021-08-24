@@ -2,6 +2,7 @@
 const favicon = document.querySelector("#favicon");
 const menu = document.getElementById("main-nav");
 const buttonMenu = document.getElementById("main-button-nav");
+const themeIcon = document.getElementById("theme-icon");
 
 const pages = [
     document.getElementById("chi-sono"),
@@ -16,7 +17,7 @@ window.onload = () => {
 }
 
 // Actions
-buttonMenu.onclick = () => {
+themeIcon.onclick = () => {
     if (localStorage.theme === "dark") localStorage.theme = "light";
     else localStorage.theme = "dark";
     theme_color();

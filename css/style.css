@@ -74,7 +74,7 @@ body .item .main-col .nav-section > nav > ul > li > a { color: #F3F4F6; margin: 
 
 body .item .main-col .nav-section > nav > ul > li > a::after { content: "|"; color: #F3F4F6; }
 
-body .item .main-col .nav-section > nav .theme-icon { font-size: 1.2em; color: #F3F4F6; }
+body .item .main-col .nav-section > nav .theme-icon { font-size: 1.2em; color: #F3F4F6; cursor: pointer; }
 
 body .item .main-col .nav-section #main-button-nav { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0.6em; border-radius: 100em; background-color: #6366F1; border: none; cursor: pointer; -webkit-transition: 0.1s; transition: 0.1s; }
 
@@ -203,7 +203,7 @@ html.dark body .item .main-col #portfolio .main-body .card-list .row .col .card 
   html body .item { -ms-grid-columns: 1fr; grid-template-columns: 1fr; }
   html body .item .side-col { height: calc(100vh - (2em * 2)); }
   html body .item .side-col > li:not(:first-child) { margin-top: 2em; }
-  html body .item .main-col .nav-section { position: fixed; top: 1em; right: 1em; }
+  html body .item .main-col .nav-section { position: fixed; top: 3em; right: 3em; }
   html body .item .main-col #chi-sono .main-body .card-list, html body .item .main-col #portfolio .main-body .card-list { padding-bottom: 1em; }
   html body .item .main-col #chi-sono .main-body .card-list .row .col, html body .item .main-col #portfolio .main-body .card-list .row .col { width: 100%; height: auto; }
   html body .item .main-col #chi-sono .main-body .card-list .row .col .card { padding: 3em 2em; }
