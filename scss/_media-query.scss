@@ -183,10 +183,6 @@ html {
 
                 .side-col {
                     height: calc(100vh - (2em * 2));
-
-                    > li:not(:first-child) {
-                        margin-top: 2em;
-                    }
                 }
 
                 .main-col {
@@ -194,9 +190,22 @@ html {
                     .nav-section {
                         position: fixed;
                         align-self: flex-start;
-                        top: 3em;
-                        right: 3em;
+                        top: auto;
+                        bottom: 1em;
+                        left: auto;
+                        right: 1em;
+                        // transform: translate(-50%);
                         z-index: 1;
+
+                        > nav {
+                            opacity: 1;
+                            width: auto;
+                            padding: 0 0.6em;
+                        }
+
+                        #main-button-nav {
+                            border-radius: 0 100em 100em 0;
+                        }
                     }
 
                     #chi-sono, #portfolio {
