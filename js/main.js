@@ -2,6 +2,7 @@
 const favicon = document.querySelector("#favicon");
 const menu = document.getElementById("main-nav");
 const buttonMenu = document.getElementById("main-button-nav");
+
 const pages = [
     document.getElementById("chi-sono"),
     document.getElementById("portfolio")
@@ -59,6 +60,7 @@ const show_page = (gotoPage) => {
 }
 
 const load_page = () => {
+
     let currentAnchor = window.location.href;
     currentAnchor = currentAnchor.substr(currentAnchor.lastIndexOf("/") + 1);
     if (currentAnchor.includes("#")) currentAnchor = currentAnchor.substr(currentAnchor.lastIndexOf("#"));

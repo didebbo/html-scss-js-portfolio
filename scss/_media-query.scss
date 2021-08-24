@@ -144,6 +144,10 @@ html {
                                             .preview {
                                                 background-color: $dark-col-color;
 
+                                                &::before {
+                                                    background-color: $dark-txt-color;
+                                                }
+
                                                 &::after {
                                                     color: $dark-col-color;
                                                 }
@@ -157,5 +161,12 @@ html {
                 }
             }
         }
+    }
+}
+
+// Portrait
+@media (orientation: portrait) {
+    .item {
+        display: none!important;
     }
 }

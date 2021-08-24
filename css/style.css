@@ -134,6 +134,14 @@ body .item .main-col #portfolio .main-body .card-list .row .col .card { position
 
 body .item .main-col #portfolio .main-body .card-list .row .col .card::after { position: absolute; -webkit-box-shadow: 0 0 0 0.12em #6366F1; box-shadow: 0 0 0 0.12em #6366F1; content: "Unknown"; left: 50%; bottom: -0.1em; -webkit-transform: translate(-50%); transform: translate(-50%); padding: 0.2em 1.5em; border-radius: 1em 1em 0 0; font-size: 1.2em; font-weight: bold; color: #F3F4F6; background-image: -webkit-gradient(linear, right top, left bottom, from(#93C5FD), to(#5047E6)); background-image: linear-gradient(to bottom left, #93C5FD, #5047E6); }
 
+body .item .main-col #portfolio .main-body .card-list .row .col .card.discord::after { content: "Discord"; }
+
+body .item .main-col #portfolio .main-body .card-list .row .col .card.dropbox::after { content: "Dropbox"; }
+
+body .item .main-col #portfolio .main-body .card-list .row .col .card.playstation::after { content: "PlayStation"; }
+
+body .item .main-col #portfolio .main-body .card-list .row .col .card.spotify::after { content: "Spotify"; }
+
 body .item .main-col #portfolio .main-body .card-list .row .col .card:hover .preview::before { opacity: 0.8; }
 
 body .item .main-col #portfolio .main-body .card-list .row .col .card:hover .preview::after { opacity: 0.8; }
@@ -186,4 +194,8 @@ html.dark body .item .main-col #portfolio .main-body .card-list .row .col .card:
 
 html.dark body .item .main-col #portfolio .main-body .card-list .row .col .card .preview { background-color: #1F2937; }
 
+html.dark body .item .main-col #portfolio .main-body .card-list .row .col .card .preview::before { background-color: #9CA3AF; }
+
 html.dark body .item .main-col #portfolio .main-body .card-list .row .col .card .preview::after { color: #1F2937; }
+
+@media (orientation: portrait) { .item { display: none !important; } }

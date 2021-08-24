@@ -421,6 +421,22 @@ body {
                                         background-image: $to-bottom-left;
                                     }
 
+                                    &.discord::after {
+                                        content: "Discord";
+                                    }
+
+                                    &.dropbox::after {
+                                        content: "Dropbox";
+                                    }
+
+                                    &.playstation::after {
+                                        content: "PlayStation";
+                                    }
+
+                                    &.spotify::after {
+                                        content: "Spotify";
+                                    }
+
                                     &:hover {
 
                                         .preview {
