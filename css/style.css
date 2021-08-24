@@ -202,7 +202,7 @@ html.dark body .item .main-col #portfolio .main-body .card-list .row .col .card 
   html body { width: 100%; height: auto; padding: 2em 0; }
   html body .item { -ms-grid-columns: 1fr; grid-template-columns: 1fr; }
   html body .item .side-col { height: calc(100vh - (2em * 2)); }
-  html body .item .main-col .nav-section { position: fixed; -ms-flex-item-align: start; align-self: flex-start; top: auto; bottom: 1em; left: auto; right: 1em; z-index: 1; }
+  html body .item .main-col .nav-section { position: fixed; -ms-flex-item-align: start; align-self: flex-start; top: auto; bottom: 1em; left: auto; right: 1em; -webkit-transform: translate(-50%); transform: translate(-50%); z-index: 1; }
   html body .item .main-col .nav-section > nav { opacity: 1; width: auto; padding: 0 0.6em; }
   html body .item .main-col .nav-section #main-button-nav { border-radius: 0 100em 100em 0; }
   html body .item .main-col #chi-sono .main-body .card-list, html body .item .main-col #portfolio .main-body .card-list { padding-bottom: 1em; }
