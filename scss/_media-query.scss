@@ -193,8 +193,12 @@ html {
 
                     .nav-section {
                         position: fixed;
-                        top: 3em;
-                        right: 3em;
+                        align-self: flex-start;
+                        top: auto;
+                        bottom: 1em;
+                        left: auto;
+                        right: 1em;
+                        z-index: 1;
                     }
 
                     #chi-sono, #portfolio {
