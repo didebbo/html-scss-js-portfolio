@@ -6,7 +6,8 @@ const themeIcon = document.getElementById("theme-icon");
 
 const pages = [
     document.getElementById("chi-sono"),
-    document.getElementById("portfolio")
+    document.getElementById("portfolio"),
+    // document.getElementById("scrivimi")
 ]
 const theme_mode_icons = document.getElementsByClassName("theme-mode-icon");
 
@@ -46,16 +47,14 @@ const show_page = (gotoPage) => {
             not_found = false;
             page.style.display = "flex";
             localStorage.lastLoadedPage = page.id;
-        }
-        else page.style.display = "none";
+        } else page.style.display = "none";
     })
     if (not_found) {
         // console.log("gotoPage include '#': " + gotoPage.includes("#"));
         if (!gotoPage.includes("#") || localStorage.lastLoadedPage == null) {
             pages[0].style.display = "flex";
             localStorage.lastLoadedPage = pages[0].id;
-        }
-        else document.getElementById(localStorage.lastLoadedPage).style.display = "flex";
+        } else document.getElementById(localStorage.lastLoadedPage).style.display = "flex";
 
     }
 }
@@ -74,8 +73,7 @@ const theme_color = () => {
         document.documentElement.classList.add("dark");
         theme_mode_icons[0].style.display = "none";
         theme_mode_icons[1].style.display = "inline";
-    }
-    else {
+    } else {
         favicon.href = "images/icon.png";
         document.documentElement.classList.remove("dark");
         theme_mode_icons[0].style.display = "inline";

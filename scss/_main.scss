@@ -6,7 +6,6 @@ body {
     height: 100vh;
     background-image: $body-color;
     background-attachment: fixed;
-
     .item {
         position: relative;
         display: grid;
@@ -15,99 +14,77 @@ body {
         width: (100%) / 1.1;
         height: (100%) / 1.2;
         overflow: hidden;
-
-        .side-col, .main-col {
+        .side-col,
+        .main-col {
             overflow: hidden;
             background-color: $col-color;
             border-radius: 2em;
         }
-
         .side-col {
             display: flex;
             padding: 2em 0;
             flex-direction: column;
             align-items: center;
             text-align: center;
-
-            > li:not(:first-child) {
+            >li:not(:first-child) {
                 margin-top: auto;
             }
-
-            > li:not(.info) {
+            >li:not(.info) {
                 margin-left: 1em;
                 margin-right: 1em;
             }
-
             .avatar {
                 position: relative;
                 width: (100% / 2.5);
-
                 &::before {
                     position: absolute;
                     content: "";
                     padding-bottom: 100%;
                 }
-
                 img {
                     border-radius: 100em;
                 }
             }
-
             .name {
                 font-size: 0.8em;
-
                 h1 {
                     font-weight: normal
                 }
             }
-
             .badge {
                 @include badge;
             }
-
-            > li.social {
-
+            >li.social {
                 .icons {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
                     gap: 0.5em;
                     font-size: 1.8em;
-
-                    > li {
-
-                        > a {
+                    >li {
+                        >a {
                             display: flex;
                             padding: 0.4em 0.5em;
                             border-radius: 100em;
                             background-color: $sub-col-color;
-                            
                             &:hover {
                                 color: $social-icons-hover-color;
-
                                 i {
                                     transition: color 0.2s;
                                 }
                             }
-
                             &.linkedin {
-                        
                                 &:hover {
                                     color: $linkedin-color;
                                 }
                             }
-
                             &.twitter {
-                        
                                 &:hover {
                                     color: $twitter-color;
                                 }
                             }
-
                             &.instagram {
-                        
                                 &:hover {
-
                                     i {
                                         background-image: $instagram-color;
                                         background-clip: text;
@@ -116,68 +93,65 @@ body {
                                     }
                                 }
                             }
-
                             &.facebook {
-                        
                                 &:hover {
                                     color: $facebook-color;
+                                }
+                            }
+                            &.github {
+                                &:hover {
+                                    color: $github-color;
                                 }
                             }
                         }
                     }
                 }
-
             }
-
-            > li.info {
+            >li.info {
                 width: 100%;
                 background-color: $sub-col-color;
                 text-align: left;
                 line-height: 1.5em;
                 white-space: nowrap;
-
                 .list {
-                    width: (100% / 2);
+                    width: (100% / 1.2);
                     margin: 0.5em auto;
                     flex-direction: column;
-
-                    > li, > li > a {
+                    .mail>a {
+                        text-decoration: underline;
+                        font-style: italic;
+                    }
+                    >li,
+                    >li>a {
                         display: flex;
                         align-items: center;
-
-                        > i {
-                            margin-right: 0.5em;
+                        >i {
+                            margin-right: 1em;
                         }
                     }
-
-                    > li {
+                    >li {
                         margin-top: 0.1em;
-                        
                         &:last-child {
                             margin-bottom: 0.1em;
                         }
                     }
                 }
             }
-
-            > li.btn-contact {
-                > a {
-                    @include btn($bg-color: $reverse-body-color, $color: $col-color);                    
+            >li.btn-contact {
+                >a {
+                    @include btn($bg-color: $reverse-body-color, $color: $col-color);
                 }
             }
         }
-
         .main-col {
             // position: relative;
             display: flex;
-
             .nav-section {
                 position: absolute;
                 display: flex;
                 right: 1em;
                 top: 1em;
-
-                > nav {
+                >nav {
                     display: flex;
                     align-items: center;
                     white-space: nowrap;
@@ -188,22 +162,17 @@ body {
                     border-radius: 100em 0 0 100em;
                     background-color: $blue-200;
                     transition: 0.1s;
-
                     &.show {
                         opacity: 1;
                         width: auto;
                         padding: 0 0.6em;
                     }
-
-                    > ul {
-
-                        > li {
-
-                            > a {
+                    >ul {
+                        >li {
+                            >a {
                                 color: $col-color;
                                 margin: 0 0.5em;
                                 font-size: 1.2em;
-
                                 &::after {
                                     content: "|";
                                     color: $col-color;
@@ -211,14 +180,12 @@ body {
                             }
                         }
                     }
-
                     .theme-icon {
                         font-size: 1.2em;
                         color: $col-color;
                         cursor: pointer;
                     }
                 }
-
                 #main-button-nav {
                     display: flex;
                     padding: 0.6em;
@@ -227,11 +194,9 @@ body {
                     border: none;
                     cursor: pointer;
                     transition: 0.1s;
-
                     &.focus {
                         border-radius: 0 100em 100em 0;
                     }
-
                     .circle {
                         width: 1.8em;
                         height: 1.8em;
@@ -240,30 +205,25 @@ body {
                     }
                 }
             }
-
-            #chi-sono, #portfolio {
+            #chi-sono,
+            #portfolio {
                 width: 100%;
                 display: flex;
                 flex-shrink: 0;
                 flex-direction: column;
                 height: 100%;
-
                 .main-header {
                     display: block;
                     padding: 1em 2em;
-
-                    > li:not(:first-child) {
+                    >li:not(:first-child) {
                         margin-top: 2em;
-
                         &:last-child {
-                        margin-bottom: 1.5em;
+                            margin-bottom: 1.5em;
                         }
                     }
-
-                    > .title {
+                    >.title {
                         display: inline-block;
                         font-size: 1.5em;
-
                         .border-bottom {
                             width: (100% / 2);
                             height: 0.2em;
@@ -273,25 +233,21 @@ body {
                         }
                     }
                 }
-
                 .main-body {
                     flex-direction: column;
                     height: 100%;
                     overflow: hidden;
                     background-color: $sub-col-color;
-
-                    > .title {
+                    >.title {
                         margin: 0.8em 0 0.2em 1.5em;
                         font-size: 1.5em;
                     }
-
                     .card-list {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         flex-grow: 1;
                         overflow: hidden;
-
                         .row {
                             display: flex;
                             flex-wrap: wrap;
@@ -299,17 +255,14 @@ body {
                             flex-grow: 1;
                             height: 100%;
                             overflow: auto;
-                            
                             &::-webkit-scrollbar {
                                 display: none;
                             }
-
-                            > .col {
+                            >.col {
                                 display: flex;
                                 padding: 1em;
                                 width: (100% / 2);
                                 height: (100% / 2);
-
                                 .card {
                                     display: flex;
                                     width: 100%;
@@ -318,35 +271,28 @@ body {
                                     padding: 2em;
                                     border-radius: 1em;
                                     overflow: auto;
-
-                                    > li {
+                                    >li {
                                         display: flex;
                                     }
-
                                     strong {
                                         color: $dark-col-color;
                                     }
-
                                     &::-webkit-scrollbar {
                                         display: none;
                                     }
-
                                     .icon {
                                         display: flex;
-                                            padding-right: 0.5em;
-                                            font-size: 2em;
-                                            color: $blue-200;
-                                        }
-
+                                        padding-right: 0.5em;
+                                        font-size: 2em;
+                                        color: $blue-200;
+                                    }
                                     .description {
                                         display: flex;
                                         flex-direction: column;
-
-                                        > * {
+                                        >* {
                                             margin: 0.1em 0;
                                         }
-
-                                        > .title {
+                                        >.title {
                                             font-size: 1.4em;
                                         }
                                     }
@@ -356,50 +302,33 @@ body {
                     }
                 }
             }
-
             #chi-sono {
-
                 .main-body {
-
                     .card-list {
-
                         .row {
                             padding: 0 1em;
-
-                            .col {
-
-                                .card {
-
-                                }
-                            }
+                            // .col {
+                            //     .card {}
+                            // }
                         }
                     }
                 }
             }
-            
             #portfolio {
-
                 .main-header {
-
-                    > .title {
-
+                    >.title {
                         .border-bottom {
                             margin-bottom: 1em;
                         }
-                    } 
+                    }
                 }
-
                 .main-body {
-
                     .card-list {
-
                         .row {
                             padding: 0 2em;
-
                             .col {
                                 width: (100% / 3);
                                 padding: 3em 1em;
-
                                 .card {
                                     position: relative;
                                     width: 100%;
@@ -407,7 +336,6 @@ body {
                                     padding: 0;
                                     overflow: hidden;
                                     box-shadow: 0 0 0 0.25em $blue-200;
-
                                     &::after {
                                         position: absolute;
                                         box-shadow: 0 0 0 0.12em $blue-200;
@@ -422,44 +350,34 @@ body {
                                         color: $col-color;
                                         background-image: $to-bottom-left;
                                     }
-
                                     &.discord::after {
                                         content: "Discord";
                                     }
-
                                     &.dropbox::after {
                                         content: "Dropbox";
                                     }
-
                                     &.playstation::after {
                                         content: "PlayStation";
                                     }
-
                                     &.spotify::after {
                                         content: "Spotify";
                                     }
-
                                     &:hover {
-
                                         .preview {
-
                                             &::before {
                                                 opacity: 0.8;
                                             }
-
                                             &::after {
                                                 opacity: 0.8;
                                             }
                                         }
                                     }
-
                                     .preview {
                                         position: relative;
                                         width: 100%;
                                         height: 100%;
                                         background-color: $blue-200;
-
-                                        &::before{
+                                        &::before {
                                             position: absolute;
                                             content: "";
                                             top: 0;
@@ -469,7 +387,6 @@ body {
                                             background-color: $col-color;
                                             opacity: 0.6;
                                         }
-
                                         &::after {
                                             position: absolute;
                                             content: "\f002";
@@ -478,7 +395,7 @@ body {
                                             font-size: 3em;
                                             top: 50%;
                                             left: 50%;
-                                            transform: translate(-50%,-50%);
+                                            transform: translate(-50%, -50%);
                                             color: $blue-200;
                                             opacity: 0;
                                         }
@@ -489,7 +406,6 @@ body {
                     }
                 }
             }
-
         }
     }
 }
