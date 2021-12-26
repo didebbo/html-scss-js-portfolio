@@ -3,6 +3,7 @@ const favicon = document.querySelector("#favicon");
 const menu = document.getElementById("main-nav");
 const buttonMenu = document.getElementById("main-button-nav");
 const themeIcon = document.getElementById("theme-icon");
+const contactForm = document.getElementById("contattami");
 
 const pages = [
     document.getElementById("chi-sono"),
@@ -56,6 +57,12 @@ const show_page = (gotoPage) => {
         } else document.getElementById(localStorage.lastLoadedPage).style.display = "flex";
 
     }
+}
+
+const toggle_textarea = () => {
+    // console.log(contactForm.classList.contains('show'))
+    if (contactForm.classList.contains('show')) contactForm.classList.remove('show');
+    else contactForm.classList.add('show');
 }
 
 const load_page = () => {

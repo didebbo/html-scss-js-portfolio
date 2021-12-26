@@ -66,9 +66,9 @@
                 </ul>
             </li>
             <li class="btn-contact">
-                <a class="btn" href="#contattami" onclick="show_page('#contattami')">
+                <button class="btn" onclick="toggle_textarea()">
                     Contattami
-                </a>
+                </button>
             </li>
         </ul>
 
@@ -248,27 +248,13 @@
                 </ul>
             </div>
 
-            <div id="contattami">
-                <ul class="main-header">
-                    <li class="title">
-                        <h2>Contattami</h2>
-                        <div class="border-bottom"></div>
-                    </li>
-                </ul>
-                <div class="main-body">
-                    <form name="contact" netlify>
-                        <p>
-                            <label>Name <input type="text" name="name" /></label>
-                        </p>
-                        <p>
-                            <label>Email <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                            <button type="submit">Send</button>
-                        </p>
-                    </form>
+            <form name="contact" method="POST" data-netlify="true">
+                <textarea name="message" placeholder="Scrivi qui il tuo messaggio..."></textarea>
+                <div class="actions">
+                    <button onclick="toggle_textarea()" type="submit">Invia</button>
+                    <button onclick="toggle_textarea()">Annulla</button>
                 </div>
-            </div>
+            </form>
 
         </div>
 

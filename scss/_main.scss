@@ -111,7 +111,7 @@ body {
                 }
             }
             >li.btn-contact {
-                >a {
+                >button {
                     @include btn();
                 }
             }
@@ -379,6 +379,48 @@ body {
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+            }
+            #contattami {
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                border-radius: 2em;
+                background-color: $bg-color;
+                width: (100% / 1.1);
+                height: (100vh / 1.2);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                overflow: hidden;
+                &.show {
+                    display: flex;
+                }
+                textarea {
+                    padding: 2em;
+                    resize: none;
+                    border: none;
+                    flex-grow: 1;
+                }
+                .actions {
+                    background-color: red;
+                    display: flex;
+                    button {
+                        flex-grow: 1;
+                        padding: 1em;
+                        border: none;
+                        color: $bg-color;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        &:first-child {
+                            background-color: $primary-color;
+                            filter: saturate(2);
+                        }
+                        &:last-child {
+                            background-color: red;
+                            filter: saturate(2);
                         }
                     }
                 }
