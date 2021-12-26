@@ -319,14 +319,20 @@ body {
                                         color: $bg-color;
                                         background-color: $primary-color;
                                     }
-                                    &.discord::after {
-                                        content: "Discord";
+                                    &.eduprime::after {
+                                        content: "Eduprime";
                                     }
-                                    &.dropbox::after {
-                                        content: "Dropbox";
+                                    &.boolzapp::after {
+                                        content: "Boolzapp";
+                                    }
+                                    &.boolflix::after {
+                                        content: "Boolflix";
                                     }
                                     &.playstation::after {
                                         content: "PlayStation";
+                                    }
+                                    &.discord::after {
+                                        content: "Discord";
                                     }
                                     &.spotify::after {
                                         content: "Spotify";
