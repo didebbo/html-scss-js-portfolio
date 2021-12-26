@@ -3,7 +3,7 @@ const favicon = document.querySelector("#favicon");
 const menu = document.getElementById("main-nav");
 const buttonMenu = document.getElementById("main-button-nav");
 const themeIcon = document.getElementById("theme-icon");
-const contactForm = document.getElementById("contact");
+const contactForm = document.getElementById("contattami");
 
 const pages = [
     document.getElementById("chi-sono"),
