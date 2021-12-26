@@ -12,7 +12,8 @@ html {
                 .side-col {
                     .avatar {
                         >img {
-                            filter: hue-rotate(-50deg);
+                            // filter: hue-rotate(-50deg);
+                            border-color: $d-accent-color;
                         }
                     }
                     .badge {
