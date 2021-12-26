@@ -61,9 +61,11 @@ const show_page = (gotoPage) => {
 }
 
 const toggle_textarea = () => {
-    contactFormArea.value = "";
     if (contactForm.classList.contains('show')) contactForm.classList.remove('show');
-    else contactForm.classList.add('show');
+    else {
+        contactFormArea.value = "";
+        contactForm.classList.add('show');
+    }
 }
 
 const load_page = () => {
