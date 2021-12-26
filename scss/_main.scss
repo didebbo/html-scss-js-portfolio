@@ -399,13 +399,14 @@ body {
                     display: flex;
                 }
                 textarea {
+                    background-color: $bg-color;
                     padding: 2em;
                     resize: none;
                     border: none;
                     flex-grow: 1;
+                    font-size: 1.2em;
                 }
                 .actions {
-                    background-color: red;
                     display: flex;
                     button,
                     a {

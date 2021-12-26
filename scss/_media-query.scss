@@ -122,6 +122,13 @@ html {
                             }
                         }
                     }
+                    #contattami {
+                        background-color: $d-bg-color;
+                        textarea {
+                            background-color: $d-bg-color;
+                            color: $d-text-color;
+                        }
+                    }
                 }
             }
         }
