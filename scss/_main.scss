@@ -407,7 +407,9 @@ body {
                 .actions {
                     background-color: red;
                     display: flex;
-                    button {
+                    button,
+                    a {
+                        text-align: center;
                         flex-grow: 1;
                         padding: 1em;
                         border: none;
