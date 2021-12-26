@@ -7,7 +7,7 @@ const themeIcon = document.getElementById("theme-icon");
 const pages = [
     document.getElementById("chi-sono"),
     document.getElementById("portfolio"),
-    // document.getElementById("scrivimi")
+    document.getElementById("contattami"),
 ]
 const theme_mode_icons = document.getElementsByClassName("theme-mode-icon");
 
