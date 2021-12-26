@@ -1,43 +1,14 @@
 // Font Style
 $font-family: monospace;
 $base-font-size: 2vh;
-// Color Vars
-$blue-100: #93C5FD;
-$blue-200: #6366F1;
-$blue-300: #5047E6;
-$dark-100: #374151;
-$dark-300: #1F2937;
-$dark-400: #111827;
-$light-txt-color: #484848;
-$dark-txt-color: #9CA3AF;
-$light-col-color: #F3F4F6;
-$dark-col-color: #1F2937;
-$light-sub-col-color: #E5E7EB;
-$dark-sub-col-color: #111827;
-// Color Gradients
-$to-top: linear-gradient(to top, $blue-100, $blue-300);
-$dark-to-top: linear-gradient(to top, $dark-100, $dark-300);
-$to-bottom: linear-gradient(to bottom, $blue-100, $blue-300);
-$dark-to-bottom: linear-gradient(to bottom, $dark-100, $dark-300);
-$to-bottom-right: linear-gradient(to bottom right, $blue-100, $blue-300);
-$dark-to-bottom-right: linear-gradient(to bottom right, $dark-100, $dark-300);
-$to-bottom-left: linear-gradient(to bottom left, $blue-100, $blue-300);
-$dark-to-bottom-left: linear-gradient(to bottom left, $dark-100, $dark-300);
-$dark-btn-to-bottom-left: linear-gradient(to bottom left, $dark-300, $dark-sub-col-color);
-// For elements
-$body-color: $to-bottom-right;
-$dark-body-color: $dark-to-bottom-right;
-$reverse-body-color: $to-bottom-left;
-$dark-reverse-body-color: $dark-to-bottom-left;
-$dark-reverse-btn-color: $dark-btn-to-bottom-left;
-$text-color: $light-txt-color;
-$col-color: $light-col-color;
-$sub-col-color: $light-sub-col-color;
-$dark-sub-col-color: $dark-sub-col-color;
-// Brands Colors
-$social-icons-hover-color: #282828;
-$linkedin-color: #0085A8;
-$twitter-color: #1C9BE9;
-$instagram-color: linear-gradient(30deg, rgba(236, 197, 8, 1) 0%, rgba(224, 10, 16, 1) 50%, rgba(119, 55, 169, 1) 100%);
-$facebook-color: #4867AA;
-$github-color: #826eb4;
+// Colors 
+$primary-color: #0a66c2;
+$secondary-color: #f3f2ef;
+$bg-color: #ffffff;
+$text-color: #282828;
+// Dark Colors
+$d-primary-color: #053361;
+$d-accent-color: #006dff;
+$d-secondary-color: #282828;
+$d-bg-color: #383838;
+$d-text-color: #ffffff;

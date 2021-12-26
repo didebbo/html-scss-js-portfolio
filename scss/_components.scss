@@ -1,18 +1,18 @@
 // Badge
-@mixin badge($bg-color: $sub-col-color) {
-    background-color: $bg-color;
+@mixin badge($background-color: $secondary-color) {
+    background-color: $background-color;
     padding: 0.8em 1em;
     border-radius: 10em;
     font-weight: bold;
     font-size: 1.1em;
 }
 
-@mixin btn ($bg-color: $sub-col-color, $color: $text-color) {
+@mixin btn ($background-color: $primary-color, $color: $bg-color) {
     display: inline-block;
     padding: 0.8em 1em;
     border-radius: 10em;
-    background-image: $bg-color;
+    background-color: $background-color;
     color: $color;
     font-weight: bold;
-    font-size: 1.1em;    
+    font-size: 1.1em;
 }

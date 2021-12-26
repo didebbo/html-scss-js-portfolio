@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scrollbar-width: none;
+    transition: background 0.2s;
     &::-webkit-scrollbar {
         display: none;
     }

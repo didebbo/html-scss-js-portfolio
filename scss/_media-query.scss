@@ -1,119 +1,92 @@
 // Dark Mode
 html {
-    
     &.dark {
-        
         body {
-            background-image: $dark-body-color;
-            color: $dark-txt-color;
-
+            background-color: $d-primary-color;
+            color: $d-text-color;
             .item {
-
-                .side-col, .main-col {
-                    background-color: $dark-col-color;
-                }
-
-                .side-col {
-
-                    .avatar {
-
-                        > img {
-                            filter: hue-rotate(-50deg) opacity(60%);
-                        }
-                    }
-
-                    .badge {
-                        @include badge($bg-color: $dark-sub-col-color);
-                    }
-
-                    > li.social {
-
-                        .icons {
-
-                            > li {
-
-                                > a {
-                                    background-color: $dark-sub-col-color;
-                                }
-                            }
-                        }
-                    }
-
-                    > li.info {
-                        background-color: $dark-sub-col-color;
-                    }
-
-                    > li.btn-contact {
-                        > a {
-                            @include btn($bg-color: $dark-reverse-btn-color, $color: $dark-txt-color);                    
-                        }
-                    }
-                }
-
+                .side-col,
                 .main-col {
-
+                    background-color: $d-bg-color;
+                }
+                .side-col {
+                    .avatar {
+                        >img {
+                            filter: hue-rotate(-50deg);
+                        }
+                    }
+                    .badge {
+                        @include badge($background-color: $d-secondary-color);
+                    }
+                    >li.social {
+                        .icons {
+                            >li {
+                                >a {
+                                    background-color: $d-secondary-color;
+                                    &:hover {
+                                        color: $d-accent-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    >li.info {
+                        background-color: $d-secondary-color;
+                        .list {
+                            .mail>a {
+                                filter: saturate(5);
+                            }
+                        }
+                    }
+                    >li.btn-contact {
+                        >a {
+                            @include btn($background-color: $d-accent-color, $color: $d-text-color);
+                        }
+                    }
+                }
+                .main-col {
                     .nav-section {
-                        > nav {
-                            background-color: $dark-sub-col-color;
-
-                            > ul {
-
-                                > li {
-
-                                    > a {
-                                        color: $dark-txt-color;
-
+                        >nav {
+                            background-color: $d-accent-color;
+                            >ul {
+                                >li {
+                                    >a {
+                                        color: $d-text-color;
                                         &::after {
-                                            color: $dark-txt-color;
+                                            color: $d-text-color;
                                         }
                                     }
                                 }
                             }
-
                             .theme-icon {
-                                color: $dark-txt-color;
+                                color: $d-text-color;
                             }
                         }
-
                         #main-button-nav {
-                            background-color: $dark-sub-col-color;
-
+                            background-color: $d-accent-color;
                             .circle {
-                                background-color: $dark-txt-color;
+                                background-color: $d-bg-color;
                             }
                         }
                     }
-
-                    #chi-sono, #portfolio {
-
+                    #chi-sono,
+                    #portfolio {
                         .main-header {
-
-                            > .title {
-
+                            >.title {
                                 .border-bottom {
-                                    background-color: $dark-txt-color;
+                                    background-color: $d-accent-color;
                                 }
                             }
                         }
-
                         .main-body {
-                            background-color: $dark-sub-col-color;
-
+                            background-color: $d-secondary-color;
                             .card-list {
-
                                 .row {
-
-                                    > .col {
-
+                                    >.col {
                                         .card {
-                                            background-color: $dark-col-color;
-
-                                            strong {
-                                                color: $light-col-color;
-                                            }
-
+                                            background-color: $d-bg-color;
                                             .icon {
-                                                color: $dark-txt-color;
+                                                color: $d-accent-color;
                                             }
                                         }
                                     }
@@ -121,35 +94,25 @@ html {
                             }
                         }
                     }
-
                     #portfolio {
-
                         .main-body {
-
                             .card-list {
-
                                 .row {
-
                                     .col {
-
                                         .card {
-                                            box-shadow: 0 0 0 0.25em $dark-col-color;
-
+                                            box-shadow: 0 0 0 0.25em $d-accent-color;
                                             &::after {
-                                                color: $dark-txt-color;
-                                                background-image: $dark-reverse-body-color;
-                                                box-shadow: 0 0 0 0.12em $dark-col-color;
+                                                color: $d-text-color;
+                                                background-color: $d-accent-color;
+                                                box-shadow: 0 0 0 0.12em $d-accent-color;
                                             }
-
                                             .preview {
-                                                background-color: $dark-col-color;
-
+                                                background-color: $d-accent-color;
                                                 &::before {
-                                                    background-color: $dark-txt-color;
+                                                    background-color: $d-text-color;
                                                 }
-
                                                 &::after {
-                                                    color: $dark-col-color;
+                                                    color: $d-text-color;
                                                 }
                                             }
                                         }
@@ -166,36 +129,26 @@ html {
 
 // Portrait
 @media (orientation: portrait) {
-
     html {
-
         &::-webkit-scrollbar {
             display: none;
         }
-
         body {
             width: 100%;
             height: auto;
             padding: 2em 0;
-
             .item {
                 grid-template-columns: 1fr;
-
                 .side-col {
                     height: calc(100vh - (2em * 2));
                 }
-
                 .main-col {
-
-                    #chi-sono, #portfolio {
-
+                    #chi-sono,
+                    #portfolio {
                         .main-body {
-
                             .card-list {
                                 padding-bottom: 1em;
-
                                 .row {
-
                                     .col {
                                         width: 100%;
                                         height: auto;
@@ -204,17 +157,11 @@ html {
                             }
                         }
                     }
-
                     #chi-sono {
-
                         .main-body {
-
                             .card-list {
-
                                 .row {
-
                                     .col {
-
                                         .card {
                                             padding: 3em 2em;
                                         }
@@ -223,21 +170,15 @@ html {
                             }
                         }
                     }
-
                     #portfolio {
-
                         .main-body {
-
                             .card-list {
-
                                 .row {
                                     padding: 2em;
-
                                     .col {
                                         padding: 2em 1em;
-                                        
                                         &::before {
-                                            content: "";                                            
+                                            content: "";
                                             margin-bottom: 50%;
                                         }
                                     }
